@@ -1,0 +1,42 @@
+/*
+ * @category  Hexocean
+ * @author    Wiktor Koscielny <wiktorkoscielny@gmail.com>
+ */
+
+.form-container {
+    padding-inline: 16px;
+    padding-block: 24px;
+}
+
+.form-input {
+    >label {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        padding-block: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+}
+
+.required-field {
+    >span {
+        color: #FF033E;
+        font-weight: 700;
+        margin-top: 10px;
+
+        &::after {
+            content: ' *'
+        }
+    }
+}
+
+.btn-container {
+    display: flex;
+    gap: 16px;
+    margin-inline: 16px;
+    padding-top: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
