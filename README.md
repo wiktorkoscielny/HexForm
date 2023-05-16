@@ -2,6 +2,8 @@
 
 It's a form created with react & redux.
 
+Live: https://hex-form.netlify.app
+
 ## Usage
 
 Adding deleting recipes,
@@ -25,4 +27,4 @@ And then clone this git repo.
 
 ## Additional info
 
-The application itself may seem overcomplicated, but I focused on the quality of the code, the possibility of development and readability.
+The application itself may seem overcomplicated, but I focused on the quality of the code, the possibility of development and readability. It will be still under development (poor styling, some bugs, many improvements for UI & UX)
