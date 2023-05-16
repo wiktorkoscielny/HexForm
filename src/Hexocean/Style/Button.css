@@ -1,0 +1,107 @@
+/*
+ * @category  Hexocean
+ * @author    Wiktor Koscielny <wiktorkoscielny@gmail.com>
+ */
+
+.btn-primary {
+  all: unset;
+  height: 30px;
+  width: 100%;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-primary::after,
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.btn-primary::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.btn-primary::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.btn-primary:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.btn-primary:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.btn-primary:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.btn-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 16px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  background: #47444d;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: var(--bg-white);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 100ms linear;
+
+  &:hover {
+    background-color: #545461;
+  }
+
+  &.clear {
+    margin-inline: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-inline: 0;
+    justify-content: center;
+  }
+}
