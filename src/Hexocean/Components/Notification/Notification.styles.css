@@ -1,0 +1,19 @@
+
+
+.notification-component {
+    z-index: 100;
+    position: fixed;
+    max-width: 400px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-inline: 25px;
+    background: #4db5ff;
+    text-align: left;
+    
+    > div {
+        padding: 25px;
+        font-weight: 800;
+        word-break: break-word;
+    }
+}
